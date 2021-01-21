@@ -1,0 +1,2 @@
+Tenant,ClientID,ClientSecret,Scope,grantype
+531ff96d-0ae9-462a-8d2d-bec7c0b42082,b085c529-1b29-4075-969c-32ebfaddb1e4,4b3eca29-2ff6-4419-8061-2b23cef9e756,api://d49d7fa2-6904-4223-a907-3b8992af4190/.default,client_credentials

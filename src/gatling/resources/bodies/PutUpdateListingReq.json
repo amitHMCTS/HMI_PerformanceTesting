@@ -1,0 +1,49 @@
+{
+  "listingRequest": {
+    "meta": {
+      "transactionIdHMCTS": "${transaction_idhmcts}",
+      "timestamp": "2020-08-14T20:20:39+00:00"
+    },
+    "_case": {
+      "caseIdHMCTS": "${case_id}",
+      "caseListingRequestId": "${case_id}",
+      "caseTitle": "${case_title}",
+      "caseJurisdiction": "${jurisdiction}",
+
+      "caseRegistered": "2000-12-19T11:59:59.374Z",
+      "caseCourt": "1",
+      "caseComments": "This is a direct listing case",
+
+      "caseRestrictedFlag": true,
+      "caseInterpreterRequiredFlag": true
+    },
+    "listing": {
+      "listingType": "DECNIS",
+      "listingDuration": 60,
+
+      "listingStartTime": "14:00:00"
+    },
+    "entities": [
+      {
+        "entityHmiId": "E200017",
+        "entityTypeCode": "IND",
+        "entityRoleCode": "DEF",
+        "entitySubType": {
+          "entityClassCode": "PERSON",
+          "entityTitle": "Mr",
+          "entityFirstName": "Simon",
+          "entityLastName": "Smith"
+        }
+      },
+      {
+        "entityHmiId": "12345",
+        "entityTypeCode": "ORG",
+        "entityRoleCode": "DEF",
+        "entitySubType": {
+          "entityClassCode": "ORG",
+          "entityCompanyName": "Best Company Ltd" }
+      }
+    ]
+  }
+}
+}

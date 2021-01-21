@@ -1,0 +1,2 @@
+case_title,case_id,transaction_idhmcts,venue,jurisdiction,service,case_type,hearing_type,priority,status,ticket_type,waiting_time,reason,duration,hearing_channel,private_hearing,listing_team
+Divorce,Div-24,TR123456,Manchester,FAM,CFT,Divorce,Civil,High,String,String,55,String,30,Online Streaming,true,Team A
