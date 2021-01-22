@@ -127,19 +127,19 @@ class HMIScenarios extends Simulation
 
 
   //200% of the load Scenario
-setUp(
-  RH.inject(rampUsers(2480) during (3600)),
-  RHU.inject(nothingFor(60), rampUsers(466) during (3600)),
-  RHUC.inject(nothingFor(120), rampUsers(156) during (3600))
-) .protocols(httpProtocol).maxDuration(4000)
+//setUp(
+//  RH.inject(rampUsers(2480) during (3600)),
+//  RHU.inject(nothingFor(60), rampUsers(466) during (3600)),
+//  RHUC.inject(nothingFor(120), rampUsers(156) during (3600))
+//) .protocols(httpProtocol).maxDuration(4000)
 
 
-  /*8hr soak Test
+  // 8hr soak Test
   setUp(RH.inject(rampUsers(9920) during (28800)),
      RHU.inject(nothingFor(60), rampUsers(1864) during (28800)),
      RHUC.inject(nothingFor(120), rampUsers(624) during (28800))
    ) .protocols(httpProtocol).maxDuration(29000)
-*/
+
 
 //Smoke Tests
 //setUp(RH.inject(atOnceUsers(users = 1)).protocols(httpProtocol))
