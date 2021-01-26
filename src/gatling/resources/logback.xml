@@ -20,10 +20,10 @@
 <!--	<root level="TRACE">-->
 
 <!--	Log Only Error-->
-<!--	<root level="WARN">-->
+	<root level="WARN">
 
 		<!--	Log Only Error-->
-			<root level="DEBUG">
+<!--			<root level="DEBUG">-->
 		<appender-ref ref="CONSOLE" />
 	</root>
 
