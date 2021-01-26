@@ -23,14 +23,14 @@ class HMIScenarios extends Simulation
       //Hearing
         RequestHearing.RequestHearing
     )
-  val RHU = scenario("RequestandUpdateHearing").feed(RequestHearingData2)
+  val RHU = scenario("RequestUpdateHearing").feed(RequestHearingData2)
     .exec(
       OAuth.auth,
       //Hearing
       RequestHearing.RequestHearing,
       UpdateAHearing.UpdateAHearing
     )
-  val  RHUC= scenario("RequestUpdateandDeleteHearing").feed(RequestHearingData3)
+  val  RHUC= scenario("RequestUpdateDeleteHearing").feed(RequestHearingData3)
     .exec(
       OAuth.auth,
       //Hearing
@@ -40,11 +40,11 @@ class HMIScenarios extends Simulation
     )
 
   //================Smoke Tests================
-setUp(
- RH.inject(atOnceUsers(users = 1))
-// RHU.inject(atOnceUsers(users = 1))
-// RHUC.inject(atOnceUsers(users = 1))
- ).protocols(httpProtocol)
+//setUp(
+// RH.inject(atOnceUsers(users = 1))
+//// RHU.inject(atOnceUsers(users = 1))
+//// RHUC.inject(atOnceUsers(users = 1))
+// ).protocols(httpProtocol)
 
 //Smokes test 50 executions over 10 min
 //================10% Load Scenario================
@@ -116,11 +116,11 @@ setUp(
   ) .protocols(httpProtocol).maxDuration(1200)
 */
 //  100% load Load Scenario
-//    setUp(
-//    RH.inject(rampUsers(1240) during (3600)),
-//    RHU.inject(nothingFor(60), rampUsers(233) during (3600)),
-//    RHUC.inject(nothingFor(120), rampUsers(78) during (3600))
-//  ) .protocols(httpProtocol).maxDuration(4000)
+    setUp(
+    RH.inject(rampUsers(1240) during (3600)),
+    RHU.inject(nothingFor(60), rampUsers(233) during (3600)),
+    RHUC.inject(nothingFor(120), rampUsers(78) during (3600))
+  ) .protocols(httpProtocol).maxDuration(4000)
 
   //200% of the load Scenario
 //setUp(
