@@ -4,7 +4,7 @@ plugins {
     id 'com.github.lkishalmi.gatling' version '3.0.2'
     id 'java-gradle-plugin'
     id 'groovy'
-    id 'com.gradle.plugin-publish' version '0.9.8'
+    id 'com.gradle.plugin-publish' version '0.11.0'
     id 'maven-publish'
 }
 
@@ -19,21 +19,22 @@ tasks.withType(JavaExec) {
 
 jar {
     manifest {
-        attributes 'Implementation-Title': 'EXUI Performance Tests',
+        attributes 'Implementation-Title': 'HMI_PerformanceTesting',
                 'Implementation-Version': version
     }
 }
 
 repositories {
     jcenter()
+    mavenCentral()
 }
 
 dependencies {
-    compile 'org.scala-lang:scala-library:2.12.8'
+    compile 'org.scala-lang:scala-library:2.12.10'
     gatlingCompile 'com.warrenstrange:googleauth:1.1.5'
-    compile group: 'io.gatling', name: 'gatling-app', version: '3.1.1'
-    compile group: 'io.gatling', name: 'gatling-recorder', version: '3.1.1'
-    compile group: 'io.gatling.highcharts', name: 'gatling-charts-highcharts', version: '3.1.1'
+    compile group: 'io.gatling', name: 'gatling-app', version: '3.5.0'
+    compile group: 'io.gatling', name: 'gatling-recorder', version: '3.5.0'
+    compile group: 'io.gatling.highcharts', name: 'gatling-charts-highcharts', version: '3.5.0'
     gatlingCompile group: 'uk.gov.service.notify', name: 'notifications-java-client', version: '3.14.1-RELEASE'
 
 
@@ -46,19 +47,5 @@ gatling {
     ]
 }
 
-test {
-    testLogging {
-        showStandardStreams = true
-    }
-    dependsOn("publishToMavenLocal")
-    systemProperty "com.github.lkishalmi.gatling.version", project.version
-}
-
-pluginBundle {
-    website = 'https://github.com/lkishalmi/gradle-gatling-plugin'
-    vcsUrl = 'https://github.com/lkishalmi/gradle-gatling-plugin'
-    description = 'Gatling Simulation Execution'
-    tags = ['gatling', 'load test', 'stress test', 'performance test', 'scala']
-}
 
 ext ['netty.version'] = '4.0.51.Final'

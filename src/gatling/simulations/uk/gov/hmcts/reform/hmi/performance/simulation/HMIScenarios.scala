@@ -1,10 +1,8 @@
 package uk.gov.hmcts.reform.hmi.performance.simulation
-import uk.gov.hmcts.reform.hmi.performance.simulation
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
-import uk.gov.hmcts.reform.hmi.performance.scenarios.listings.PutUpdateListingReq
-import uk.gov.hmcts.reform.hmi.performance.scenarios.utils.Environment
-import uk.gov.hmcts.reform.hmi.performance.scenarios.{GetHearingInfoByID, GetHearingInforAll, GetTheListingforARequest, OAuth, RequestHearing, SendListingInformationCASEHQ, UpdateAHearing}
+import uk.gov.hmcts.reform.hmi.performance.scenarios.utils.{Environment, SITenv}
+import uk.gov.hmcts.reform.hmi.performance.scenarios.{OAuth, RequestHearing, UpdateAHearing}
 
 class HMIScenarios extends Simulation
 {
@@ -41,13 +39,12 @@ class HMIScenarios extends Simulation
 
     )
 
-
   //================Smoke Tests================
-//setUp(
-// RH.inject(atOnceUsers(users = 1)),
-//// RHU.inject(atOnceUsers(users = 1)),
-//// RHUC.inject(atOnceUsers(users = 1))
-// ).protocols(httpProtocol)
+setUp(
+ RH.inject(atOnceUsers(users = 1))
+// RHU.inject(atOnceUsers(users = 1))
+// RHUC.inject(atOnceUsers(users = 1))
+ ).protocols(httpProtocol)
 
 //Smokes test 50 executions over 10 min
 //================10% Load Scenario================
@@ -133,12 +130,10 @@ class HMIScenarios extends Simulation
 //) .protocols(httpProtocol).maxDuration(4000)
 
   // 8hr soak Test
-  setUp(
-    RH.inject(rampUsers(9920) during (28800)),
-     RHU.inject(nothingFor(60), rampUsers(1864) during (28800)),
-     RHUC.inject(nothingFor(120), rampUsers(624) during (28800))
-   ) .protocols(httpProtocol).maxDuration(29000)
+//  setUp(
+//    RH.inject(rampUsers(9920) during (28800)),
+//     RHU.inject(nothingFor(60), rampUsers(1864) during (28800)),
+//     RHUC.inject(nothingFor(120), rampUsers(624) during (28800))
+//   ) .protocols(httpProtocol).maxDuration(29000)
 
-//Smoke Tests
-//setUp(RH.inject(atOnceUsers(users = 1)).protocols(httpProtocol))
 }

@@ -62,7 +62,7 @@ object Feeders {
 
 
   def generateEmailForCase() :String = {
-    generatedEmailForCase = ("exui_case" + randomAlphanumericString(6) + "@mailtest.gov.uk")
+    generatedEmailForCase = ("HMI_case" + randomAlphanumericString(6) + "@mailtest.gov.uk")
     //print("generated enail"+generatedEmail)
     generatedEmailForCase
   }
