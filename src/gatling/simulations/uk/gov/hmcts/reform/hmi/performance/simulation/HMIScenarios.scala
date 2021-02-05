@@ -1,7 +1,7 @@
 package uk.gov.hmcts.reform.hmi.performance.simulation
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
-import uk.gov.hmcts.reform.hmi.performance.scenarios.utils.{Environment, SITenv}
+import uk.gov.hmcts.reform.hmi.performance.scenarios.utils.Environment
 import uk.gov.hmcts.reform.hmi.performance.scenarios.{OAuth, RequestHearing, UpdateAHearing}
 
 class HMIScenarios extends Simulation
