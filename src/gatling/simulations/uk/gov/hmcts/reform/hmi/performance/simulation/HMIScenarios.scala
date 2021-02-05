@@ -13,10 +13,10 @@ class HMIScenarios extends Simulation
   exec(flushHttpCache)
 
 
-//  val httpProtocol = http.baseUrl (url = Environment.baseURL)
-  val BashURL = Environment.baseURL
-   val httpProtocol = http
-  .baseUrl(BashURL).proxy(Proxy("proxyout.reform.hmcts.net", 8080))
+  val httpProtocol = http.baseUrl (url = Environment.baseURL)
+//  val BashURL = Environment.baseURL
+//   val httpProtocol = http
+//  .baseUrl(BashURL).proxy(Proxy("proxyout.reform.hmcts.net", 8080))
   val RH = scenario("RequestHearing").feed(RequestHearingData1)
     .exec(
       OAuth.auth,
