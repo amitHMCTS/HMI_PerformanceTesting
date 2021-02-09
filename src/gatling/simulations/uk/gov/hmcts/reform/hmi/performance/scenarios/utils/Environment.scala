@@ -7,8 +7,8 @@ object Environment {
   //val baseURL = "https://hmi-apim.perftest.platform.hmcts.net/hmi/"
   //val baseURL = "https://hmi-apim.aat.platform.hmcts.net/hmi/"
 //  val baseURL = "https://hmi-apim.emulator.platform.hmcts.net/hmi"
-  val baseURL = "https://hmi-apim-svc-sbox.azure-api.net/hmi"
-//  val baseURL = "https://hmi-apim.staging.platform.hmcts.net/hmi"
+//  val baseURL = "https://hmi-apim-svc-sbox.azure-api.net/hmi"
+  val baseURL = "https://hmi-apim.staging.platform.hmcts.net/hmi"
  val headers = Map(
   //"Ocp-Apim-Subscription-Key" -> "50048c93e1624ad29726a6b7beb25df8",
  // "Ocp-Apim-Subscription-Key" -> "ecea5d25107e4348b3e3c2c9ee12e023",
