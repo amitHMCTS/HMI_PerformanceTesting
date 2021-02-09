@@ -115,7 +115,7 @@ class HMIScenarios extends Simulation
     RHUC.inject(nothingFor(120), rampUsers(12) during (600))
   ) .protocols(httpProtocol).maxDuration(1200)
 */
-//  100% load Load Scenario
+  ////  100% load Load Scenario
     setUp(
     RH.inject(rampUsers(1240) during (3600)),
     RHU.inject(nothingFor(60), rampUsers(233) during (3600)),
