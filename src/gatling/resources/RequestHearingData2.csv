@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 case_title,case_id,transaction_idhmcts,venue,jurisdiction,service,case_type,hearing_type,priority,status,ticket_type,waiting_time,reason,duration,hearing_channel,private_hearing,listing_team
 PERFB4753,PERFB4753,PERFB4753,Manchester,FAM,CFT,THEFT,Civil,High,FAM,FAM,55,FAM,30,Online Streaming,TRUE,Team A
 PERFB4754,PERFB4754,PERFB4754,Manchester,FAM,CFT,THEFT,Civil,High,FAM,FAM,55,FAM,30,Online Streaming,TRUE,Team A

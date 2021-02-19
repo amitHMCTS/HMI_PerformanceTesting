@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 case_title,case_id,transaction_idhmcts,venue,jurisdiction,service,case_type,hearing_type,priority,status,ticket_type,waiting_time,reason,duration,hearing_channel,private_hearing,listing_team
 DataFile3,Div-24,TRC325726,Manchester,FAM,CFT,Divorce,Civil,High,String,String,55,String,30,Online Streaming,TRUE,Team A
 DataFile3,Div-24,TRC325727,Manchester,FAM,CFT,Divorce,Civil,High,String,String,55,String,30,Online Streaming,TRUE,Team A
