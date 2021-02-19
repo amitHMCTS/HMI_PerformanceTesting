@@ -13,11 +13,5 @@ object UpdateAHearing {
       .put("/hearings/${case_id}")
       .headers(Environment.headers)
       .body(ElFileBody("bodies/UpdateHearing.json")).asJson
-      .check(status.is(202))
-      .check(bodyString.saveAs("BODY2")))
-//    .exec{
-//      session =>
-//        println(session("BODY2").as[String])
-//        session
-//    }
+      .check(status.is(202)))
 }
