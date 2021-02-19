@@ -5,8 +5,6 @@ object Environment {
   val baseURL = "https://hmi-apim.staging.platform.hmcts.net/hmi"
  val headers = Map(
     "Ocp-Apim-Subscription-Key" -> "ecea5d25107e4348b3e3c2c9ee12e023",
-
-
     "Source-System"             -> "CFT",
     "Request-Type"              -> "THEFT",
     "Request-Processed-At"      -> "2020-11-18T20:20:39+00:00",
