@@ -12,7 +12,7 @@ object OAuth {
   val clientId      = "${ClientID}";
   val clientSecret  = "${ClientSecret}";
   val scope         = "${Scope}";
-  val granttype     ="${grantype}"
+  val granttype     = "${grantype}"
 
 
   //val baseUrl = "vh-video-api-preprod.azurewebsites.net";

@@ -15,11 +15,5 @@ object RequestHearing {
       .check(status.is(202))
 //      .check(bodyString.saveAs("BODY2"))
       .check(status.saveAs("Statusx")))
-//    .exec{
-//      session =>
-//        println(session("BODY2").as[String])
-//        println("HTTP.ResponseCode-->",session("Statusx").as[String])
-//        println("Create Request Hearing-->",session)
-//        session
-//    }
+
 }

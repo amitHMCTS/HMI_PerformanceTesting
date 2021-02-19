@@ -2,7 +2,7 @@
   "hearingRequest": {
     "meta": {
       "transactionIdHMCTS": "${transaction_idhmcts}",
-      "timestamp": "2020-11-13T20:20:39+00:00"
+      "timestamp": "2021-02-18T20:20:39+00:00"
     },
     "_case": {
       "caseIdHMCTS": "${case_id}",
@@ -10,7 +10,7 @@
       "caseTitle": "${case_title}",
       "caseJurisdiction": "${jurisdiction}",
       "caseSubType": "79",
-      "caseRegistered": "2000-12-19T11:59:59.374Z",
+      "caseRegistered": "2021-02-18T11:59:59.374Z",
       "caseCourt": "1",
       "caseComments": "ENTITY TEST",
       "caseRelatedCaseIdHMCTS": [],
