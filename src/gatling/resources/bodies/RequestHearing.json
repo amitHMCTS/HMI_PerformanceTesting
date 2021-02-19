@@ -3,7 +3,7 @@
     "meta": {
     },
     "_case": {
-      "caseIdHMCTS": "${GenNoxxx}",
+      "caseIdHMCTS": "${case_id}",
       "caseListingRequestId": "${case_id}",
       "caseTitle": "${case_title}",
       "caseJurisdiction": "${jurisdiction}",

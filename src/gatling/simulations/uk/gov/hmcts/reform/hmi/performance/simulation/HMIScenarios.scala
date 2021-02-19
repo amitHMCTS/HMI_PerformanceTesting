@@ -40,7 +40,7 @@ class HMIScenarios extends Simulation
 
   //================Smoke Tests======================
 setUp(
- RH.inject(atOnceUsers(users = 1))
+ RH.inject(atOnceUsers(users = 100))
 // RHU.inject(atOnceUsers(users = 1))
 // RHUC.inject(atOnceUsers(users = 1))
  ).protocols(httpProtocol)
