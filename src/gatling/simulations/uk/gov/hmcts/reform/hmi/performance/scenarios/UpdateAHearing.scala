@@ -5,10 +5,10 @@ import io.gatling.http.Predef._
 import uk.gov.hmcts.reform.hmi.performance.scenarios.utils.Environment
 
 object UpdateAHearing {
-  val UpdateHearingData= csv("UpdateAHearing.csv").circular
+//  val UpdateHearingData= csv("UpdateAHearing.csv").circular
 
   val UpdateAHearing= scenario(scenarioName = "030_UpdateAHearing_PUT")
-    .feed(UpdateHearingData)
+//    .feed(UpdateHearingData)
     .exec(http(requestName="Update_hearings_Request")
       .put("/hearings/${case_id}")
       .headers(Environment.headers)

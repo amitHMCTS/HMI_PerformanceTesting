@@ -7,8 +7,8 @@ import uk.gov.hmcts.reform.hmi.performance.scenarios.utils.Environment
 
 
 object RequestHearing {
-  val RHFeeder = Feeder.DynamicAdminFeeder
-  feed(RHFeeder)
+//  val RHFeeder = Feeder.DynamicAdminFeeder
+//  feed(RHFeeder)
   val RequestHearing = scenario(scenarioName = "010_RequestHearing_Post")
     .exec(http(requestName="post_request_hearings")
       .post("/hearings/")
