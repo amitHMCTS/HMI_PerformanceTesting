@@ -14,13 +14,13 @@ class HMIScenarios extends Simulation
 
 
   val httpProtocol = http.baseUrl (url = Environment.baseURL)
-  val RH = scenario("ReqHearing").feed(RequestHearingData1)
+  val RH = scenario("RequestHearing").feed(RequestHearingData1)
     .exec(
       OAuth.auth,
       //Hearing
         RequestHearing.RequestHearing
     )
-  val RHU = scenario("ReqHearing").feed(RequestHearingData2)
+  val RHU = scenario("RequestUpdateHearing").feed(RequestHearingData2)
     .exec(
       OAuth.auth,
       //Hearing
@@ -28,7 +28,7 @@ class HMIScenarios extends Simulation
 //      ,
 //      UpdateAHearing.UpdateAHearing
     )
-  val  RHUC= scenario("ReqHearing1").feed(RequestHearingData3)
+  val  RHUC= scenario("RequestUpdateDeleteHearing").feed(RequestHearingData3)
     .exec(
       OAuth.auth,
       //Hearing
